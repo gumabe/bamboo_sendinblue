@@ -39,14 +39,13 @@ defmodule BambooSendinblue.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:bamboo, "~> 2.2.0"},
-      {:credo, "~> 0.10.2", only: [:dev, :test]},
-      {:earmark, "~> 1.2.6", only: :dev},
-      {:ex_doc, "~> 0.19.1", only: :dev},
+      {:bamboo, "~> 2.3.0"},
+      {:credo, "~> 1.0", only: [:dev, :test]},
+      {:earmark, "~> 1.4", only: :dev},
+      {:ex_doc, "~> 0.31", only: :dev},
       {:jason, "~> 1.4"},
-      {:cowboy, "~> 2.5.0", only: [:test, :dev]},
+      {:cowboy, "~> 2.10.0", only: [:test, :dev]},
       {:plug_cowboy, "~> 2.0", only: [:test, :dev]}
-
     ]
   end
 
