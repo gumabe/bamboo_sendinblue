@@ -21,7 +21,7 @@ import Config
 #     config :logger, level: :info
 #
 
-config :bamboo, :json_library, Poison
+config :bamboo, :json_library, Jason
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

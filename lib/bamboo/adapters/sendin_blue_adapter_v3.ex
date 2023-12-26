@@ -56,7 +56,7 @@ defmodule Bamboo.SendinBlueAdapterV3 do
 
   def deliver(email, config) do
     api_key = get_key(config)
-    body = email |> to_sendinblue_body |> Poison.encode!()
+    body = email |> to_sendinblue_body |> Jason.encode!()
     url = get_api_url()
 
     case :hackney.post(url, headers(api_key), body, [:with_body]) do
